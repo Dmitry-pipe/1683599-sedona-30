@@ -18,7 +18,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиница</a></li>
+          <li><a href="hotel.html">Гостиницы</a></li>
         </ul>
       </nav>
 
@@ -97,7 +97,69 @@
           </li>
         </ol>
       </section>
+
+      <section>
+        <p>Заинтересовались?</p>
+        <p>Укажите предпологаемые даты поездки, <br>
+        и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+
+        <!-- Кнопка на форму записи -->
+        <button type="button">Поиск гостиницы в Седоне</button>
+
+        <!-- Карта -->
+        <a href="https://via.placeholder.com/150x100"></a>
+      </section>
+
     </main>
+
+    <footer>
+      <section>
+        <p>
+          #VisitSedona<br>
+          тел: <a href="tel:74956660166"></a>+7(495) 666-01-66
+        </p>
+      </section>
+
+      <!-- twitter, vk, fb -->
+      <section>
+        <ul>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- developer -->
+      <p>
+        website by
+        <a href="https://via.placeholder.com/60x40" alt=""></a>
+      </p>
+
+    </footer>
+
+    <!-- Форма записи -->
+    <section>
+      <form action="https://echo.htmlacademy.ru"
+      method="post">
+        <label for="input-date-arrive">Дата заезда</label>
+        <input id="input-date-arrive" type="date" name="arrive-dt" value="2017-04-24">
+        <label for="input-date-departure">Дата выезда</label>
+        <input id="input-date-departure" type="date" name="departure-dt" value="2017-07-04">
+
+        <label for="input-number-adults">Взрослые:</label>
+        <input id="input-number-adults" type="number" name="AdultsNum" value="1" min="1" max="30">
+        <label for="input-number-children">Дети:</label>
+        <input id="input-number-children" type="number" name="ChildrenNum" value="1" min="0" max="40">
+
+      </form>
+      <button type="button">Найти</button>
+    </section>
 
   </body>
 </html>
