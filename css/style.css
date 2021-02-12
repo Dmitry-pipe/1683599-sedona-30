@@ -1,0 +1,246 @@
+
+/* Variables */
+
+:root{
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-dark: #333333;
+  --basic-gray: #eeeeee;
+  --bck-light-gray: #888888;
+  --txt-gray: #666666;
+
+  --basic-beige: #766357;
+  --light-gray: #f2f2f2;
+
+  --basic-skyblue2: #81B3D2;
+  --basic-skyblue3: #81B3D3; /* logo */
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("PTSans"),
+       url("PTSans") format("woff2"),
+       url("PTSans") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: italic;
+  src: local("PTSans"),
+       url("PTSans") format("woff2"),
+       url("PTSans") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("PTSans-Bold"),
+       url("PTSans-Bold") format("woff2"),
+       url("PTSans-Bold") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: italic;
+  src: local("PTSans-Bold"),
+       url("PTSans-Bold") format("woff2"),
+       url("PTSans-Bold") format("woff");
+}
+
+/* Global */
+
+.page-body{
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--bck-light-gray);
+}
+
+
+/* Main navigation */
+
+.main-navigation {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-dark);
+}
+
+/* Features and benefits */
+
+.features-list,
+.features-list-short {
+  list-style: none;
+}
+
+.feature-item {
+  line-height: 21px;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.item-white-blue {
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--basic-skyblue2);
+  text-align: center;
+}
+
+.item-white-blue h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.item-black-white {
+  line-height: 21px;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.item-black-gray {
+  line-height: 21px;
+  color: var(--basic-dark);
+  background-color: var(--basic-gray);
+  text-align: center;
+}
+
+.item-black-white h3,
+.item-black-gray h3 {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+/* Interest */
+
+.signup {
+  line-height: 24px;
+  background-color: var(--basic-white);
+}
+
+.text-large {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+  /* main buttons */
+
+.signup-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-beige);
+  text-align: center;
+  border: none;
+}
+
+.signup-form-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-skyblue2);
+  text-align: center;
+  border: none;
+}
+
+.signup-button:hover,
+.signup-button:focus,
+.signup-button:active,
+.signup-form-button:hover,
+.signup-form-button:focus,
+.signup-form-button:active {
+  opacity: 0.9;
+}
+
+.signup-button.disabled,
+.signup-button:disabled,
+.signup-form-button.disabled,
+.signup-form-button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+
+/* Modal window */
+
+.signup-item {
+  font: inherit;
+  font-weight: 700;
+  border: none;
+}
+
+.signup-item input {
+  background-color: var(--light-gray);
+}
+
+.signup-item input:focus {
+  /*background-color: var(--light-gray);*/
+}
+
+
+/* Footer */
+
+.page-footer {
+  background-color: var(--basic-white);
+}
+
+.footer-contacts {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.footer-contacts a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--basic-skyblue2);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-skyblue3);
+}
