@@ -1,4 +1,48 @@
 
+
+
+/* Fonts */
+
+/* @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap");
+*/
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("PTSans"),
+       url("../fonts/PTSans.woff2") format("woff2"),
+       url("../fonts/PTSans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: italic;
+  src: local("PTSans"),
+       url("../fonts/PTSans.woff2") format("woff2"),
+       url("../fonts/PTSans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("PTSans-Bold"),
+       url("../fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../fonts/PTSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: italic;
+  src: local("PTSans-Bold"),
+       url("../fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../fonts/PTSans-Bold.woff") format("woff");
+}
+
+
 /* Variables */
 
 :root{
@@ -14,44 +58,6 @@
 
   --basic-skyblue2: #81B3D2;
   --basic-skyblue3: #81B3D3; /* logo */
-}
-
-/* Fonts */
-
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-style: normal;
-  src: local("PTSans"),
-       url("PTSans") format("woff2"),
-       url("PTSans") format("woff");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-style: italic;
-  src: local("PTSans"),
-       url("PTSans") format("woff2"),
-       url("PTSans") format("woff");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-style: normal;
-  src: local("PTSans-Bold"),
-       url("PTSans-Bold") format("woff2"),
-       url("PTSans-Bold") format("woff");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-style: italic;
-  src: local("PTSans-Bold"),
-       url("PTSans-Bold") format("woff2"),
-       url("PTSans-Bold") format("woff");
 }
 
 /* Global */
@@ -190,6 +196,10 @@
 
 
 /* Modal window */
+
+.modal-signup {
+  background-color: var(--basic-white);
+}
 
 .signup-item {
   font: inherit;
