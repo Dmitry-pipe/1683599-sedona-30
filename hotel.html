@@ -13,17 +13,20 @@
 
 </head>
 
-<body>
+<body class="page-body">
+
   <!-- Шапка -->
-  <header>
-    <nav>
-      <ul>
+
+  <header class="main-header">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
         <li><a href="#">Гостиницы</a></li>
       </ul>
-      <a href="index.html">
+
+      <a class="main-header-logo" href="index.html">
         <img src="img/logo.png" width="138" height="70" alt="Sedona">
       </a>
     </nav>
@@ -31,19 +34,19 @@
 
   <main>
 
-    <!-- На странице нету ни одного тега h
-    -->
-
+    <!-- На странице нету ни одного тега h -->
 
     <!-- Блок выбора жилья -->
-    <section>
+
+    <section class="filters">
       <!--
       <h2>Фильтр номеров</h2>
       -->
+      <img class="feature-image" src="./img/hotel-background.png" width="1200" height="217" alt="Жильё в настоящем городке">
 
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend>Инфраструктура:</legend>
+          <legend class="filters-text-bold">Инфраструктура:</legend>
           <ul>
             <li>
               <input type="checkbox"
@@ -65,10 +68,10 @@
               <label for="filter-wifi">Wi-Fi</label>
             </li>
           </ul>
-
         </fieldset>
+
         <fieldset>
-          <legend>Тип жилья:</legend>
+          <legend class="filters-text-bold">Тип жилья:</legend>
           <ul>
             <li>
               <input type="checkbox"
@@ -95,7 +98,11 @@
         </fieldset>
 
         <fieldset>
-          <p>Стоимость в сутки (Р):</p>
+          <p class="filters-text-bold">Стоимость в сутки (Р):</p>
+          <div class="div-input-range">
+            <p>От 0</p>
+            <p>До 3000</p>
+          </div>
           <input type="range"
           name="cost"
           id="cost-range"
@@ -105,55 +112,61 @@
         </fieldset>
 
 
-        <button type="submit">Показать</button>
+        <button class="button-show" type="submit">Показать</button>
       </form>
     </section>
 
     <!-- Список гостиниц -->
-    <section>
+    <section class="livings">
 
-      <p>Найдено: 3</p>
-      <p>Сортировка: </p>
-      <ul>
-        <li>По цене</li>
+      <p class="livings-big-text">Найдено: 3</p>
+      <p class="sorting-text">Сортировка:</p>
+
+      <ul class="sorting-list">
+        <li class="sorting-current">По цене</li>
         <li>По типу</li>
         <li>По рейтингу</li>
+        <li>
+          <img src="https://via.placeholder.com/11x10" alt="Triu up">
+          <img src="https://via.placeholder.com/11x10" alt="Triu down">
+        </li>
       </ul>
 
-      <ul>
+      <ul class="living-list">
         <li>
             <img src="img/hotel-living1.jpg" width="135" height="90" alt="Amara Resort & SPA">
-            <p>Amara Resort & SPA</p>
+            <p class="livings-big-text">Amara Resort & SPA</p>
             <p>Гостиница</p>
             <p>от 4000 р.</p>
             <p>Рейтинг: 8,5</p>
+            <!--<div></div>  Звёздочки через background-image mdn: https://developer.mozilla.org/ru/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders -->
             <p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+              <button class="button-details" type="button">Подробнее</button>
+              <button class="button-reservation" type="button">Забронировать</button>
             </p>
         </li>
 
         <li>
             <img src="img/hotel-living2.jpg" width="135" height="90" alt="Desert Quall Inn">
-            <p>Desert Quall Inn</p>
+            <p class="livings-big-text">Desert Quall Inn</p>
             <p>Мотель</p>
             <p>от 3000 р.</p>
             <p>Рейтинг: 8,9</p>
             <p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+              <button class="button-details" type="button">Подробнее</button>
+              <button class="button-reservation" type="button">Забронировать</button>
             </p>
         </li>
 
         <li>
             <img src="img/hotel-living3.jpg" width="135" height="90" alt="Villas Et Poco Diablo">
-            <p>Villas Et Poco Diablo</p>
+            <p class="livings-big-text">Villas Et Poco Diablo</p>
             <p>Апартаменты</p>
             <p>от 2000 р.</p>
             <p>Рейтинг: 9,2</p>
             <p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+              <button class="button-details" type="button">Подробнее</button>
+              <button class="button-reservation" type="button">Забронировать</button>
             </p>
         </li>
       </ul>
@@ -162,29 +175,29 @@
   </main>
 
   <!-- Подвал -->
-  <footer>
-    <section>
+  <footer class="page-footer">
+    <section class="footer-contacts">
       <p>
         #VisitSedona<br>
         тел: <a href="tel:74956660166"></a>+7(495) 666-01-66
       </p>
     </section>
 
-    <section>
+    <section class="footer-social">
       <ul>
         <li>
-          <a href="#"></a>
+          <a class="social-button" href="#"></a>
         </li>
         <li>
-          <a href="#"></a>
+          <a class="social-button" href="#"></a>
         </li>
         <li>
-          <a href="#"></a>
+          <a class="social-button" href="#"></a>
         </li>
       </ul>
     </section>
 
-    <p>
+    <p class="footer-copyright">
       website by
       <a href="https://htmlacademy.ru">HTML Academy</a>
     </p>

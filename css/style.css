@@ -1,6 +1,4 @@
 
-
-
 /* Fonts */
 
 /* @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap");
@@ -58,6 +56,9 @@
 
   --basic-skyblue2: #81B3D2;
   --basic-skyblue3: #81B3D3; /* logo */
+
+  --hotel-background: #46749c;
+  --basic-white-transparent: #ffffff00;
 }
 
 /* Global */
@@ -78,9 +79,14 @@
 
 /* Main navigation */
 
+.main-header {
+  background-color: var(--basic-white);
+}
+
 .main-navigation {
   font-weight: 700;
   font-style: normal;
+  background-color: var(--basic-white);
 }
 
 .site-navigation {
@@ -99,6 +105,9 @@
 
 /* Features and benefits */
 
+.features {
+  background-color: var(--basic-white);
+}
 .features-list,
 .features-list-short {
   list-style: none;
@@ -254,3 +263,141 @@
 .social-button:focus {
   background-color: var(--basic-skyblue3);
 }
+
+
+
+
+
+/* ************************** */
+        /* hotel.html */
+/* ************************** */
+
+/* Also use .page-body in <body> */
+
+
+/*----------------------------
+/* Filters section */
+
+.filters {
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: var(--hotel-background);
+  background-image: url(./img/hotel-background.png);
+}
+
+.filters-text-bold {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.div-input-range {
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
+  background-color: var(--basic-white-transparent);
+  border-radius: 2px;
+}
+
+.button-show {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  background-color: var(--basic-white-transparent);
+}
+
+.button-show:hover,
+.button-show:focus {}
+
+
+/*----------------------------
+/* Search-results section */
+
+.livings {
+  /* text-decoration: inherit; */
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/* Sorting type */
+
+.livings-big-text {
+  font-size: 21px;
+  /*line-height: 26px;*/
+  font-weight: 700;
+}
+
+.sorting-text {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-list {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-list li {
+  opacity: 0.3;
+  text-decoration: underline dotted var(--basic-skyblue2);
+}
+
+.sorting-list li:hover,
+.sorting-list li:focus {
+  opacity: 0.8;
+  color: var(--basic-skyblue2);
+  text-decoration-color: underline dotted var(--basic-white);
+}
+
+.sorting-current {
+  opacity: 1.0;
+  color: var(--basic-skyblue2);
+  /*text-decoration: initial;
+  text-decoration-thickness: 0%;*/
+  text-decoration-color: underline dotted var(--basic-white);
+  /*text-decoration: underline dotted var(--basic-white);*/
+  /*text-decoration-line: none;
+  text-decoration-skip: spaces; */
+
+}
+
+/* Living list */
+
+.living-list {
+  list-style: none;
+}
+
+.button-details {
+  /*font-size: 12px;*/
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  text-align: center;
+
+  border: none;
+  background-color: var(--basic-skyblue2);
+}
+
+.button-details:hover,
+.button-details:focus {}
+
+.button-reservation {
+  /*font-size: 12px;*/
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  text-align: center;
+
+  border: none;
+  background-color: var(--basic-beige);
+}
+
+.button-reservation:hover,
+.button-reservation:focus {}
