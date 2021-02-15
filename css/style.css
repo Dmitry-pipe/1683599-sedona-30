@@ -282,7 +282,7 @@
   line-height: 21px;
   color: var(--basic-white);
   background-color: var(--hotel-background);
-  background-image: url(./img/hotel-background.png);
+  background-image: url("../img/hotel-background.png");
 }
 
 .filters-text-bold {
@@ -342,29 +342,26 @@
   line-height: 18px;
 }
 
-.sorting-list li {
+.sorting-item {
   opacity: 0.3;
-  text-decoration: underline dotted var(--basic-skyblue2);
-}
-
-.sorting-list li:hover,
-.sorting-list li:focus {
-  opacity: 0.8;
-  color: var(--basic-skyblue2);
-  text-decoration-color: underline dotted var(--basic-white);
+  border-bottom: 2px dotted var(--basic-skyblue2);  /* вместо непереопределямого text-decoration*/
 }
 
 .sorting-current {
-  opacity: 1.0;
+  opacity: 1;
   color: var(--basic-skyblue2);
-  /*text-decoration: initial;
-  text-decoration-thickness: 0%;*/
-  text-decoration-color: underline dotted var(--basic-white);
-  /*text-decoration: underline dotted var(--basic-white);*/
-  /*text-decoration-line: none;
-  text-decoration-skip: spaces; */
-
+  border-bottom: transparent;
 }
+
+.sorting-item:hover,
+.sorting-item:focus,
+.sorting-current:hover,
+.sorting-current:focus {
+  opacity: 0.8;
+  color: var(--basic-skyblue2);
+}
+
+
 
 /* Living list */
 
